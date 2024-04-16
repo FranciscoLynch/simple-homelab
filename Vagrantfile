@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
     config.vm.define "main-server" do |h|
-        h.vm.box = "ubuntu/trusty64"
+        h.vm.box = "ubuntu/focal64"
         h.vm.hostname = "main-server"
         h.vm.network "private_network", ip: "192.168.56.50"
         h.vm.provider "virtualbox" do |vb|
